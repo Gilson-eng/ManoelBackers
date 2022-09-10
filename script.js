@@ -3,6 +3,9 @@ function Enviar() {
     if (name === '') {
         alert("O campo nome não pode estar em branco!");
     }
+    else{
+        
+    }
 
 }
 
