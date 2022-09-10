@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Manoel Backer's</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="ASSETS/MANOEL BACKERS.png">
+
+    </div>
+
+    <nav>
+        <div id="nave">
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#contatos">
+                    <li>Contatos</li>
+                </a>
+                <a href="#produtos">
+                    <li>Produtos</li>
+                </a>
+            </ul>
+            <!-- div>ul>li*3>a -->
+            <!-- div.nave>ul>li*3>a -->
+        </div>
+    </nav>
+    <main>
+
+        <div class="historia" id="home">
+            <h1>História</h1>
+            <p>A arte da panificação foi desenvolvida no início do Império Romano. Era uma arte altamente famosa
+                como os cidadãos romanos amavam assados e exigiam por eles frequentemente para ocasiões
+                importantes como festas e casamentos etc. Devido à fama e desejo que a arte de assar recebeu,
+                por volta de 300 a.C, a panificação foi introduzida como uma ocupação e profissão respeitável
+                para os romanos. Os padeiros começaram a preparar pão em casa em um forno, usando moinhos para
+                moer grãos na farinha para seus pães. A demanda que se aproximava por assados vigorosamente
+                continuou e a primeira guilda de padeiros foi estabelecida em 168 a.C., em Roma. Este apelo
+                drástico para produtos de panificação promoveu o cozimento em toda a Europa e se expandiu para
+                as partes orientais da Ásia. Os padeiros começaram a fazer pães e produtos em casa e vendê-los
+                nas ruas.
+                Esta tendência tornou-se comum e, em breve, produtos de panificação foram vendidos nas ruas de
+                Roma, Alemanha, Londres e muitos mais. Isso resultou em um sistema de entrega de mercadorias para
+                as famílias, uma vez que a demanda por pães assados e bens aumentou significativamente. Isso
+                provocou que os padeiros estabelecessem um lugar onde as pessoas pudessem comprar assados para
+                si mesmos. Portanto, em Paris, a primeira padaria a céu aberto de produtos de panificação foi
+                desenvolvida e, desde então, as padarias se tornaram um lugar comum para comprar produtos
+                deliciosos e se reunir em todo o mundo. Na era colonial, as padarias eram comumente vistas
+                como lugares para se reunir e socializar.</p>
+        </div>
+
+        <div class="paes" id="produtos">
+            <h1>Pães</h1>
+            <div class="teste2">
+                <div>
+                    <p>Pão (do latim "pane") é um alimento obtido pela cocção de uma massa de consistência elástica,
+                        elaborada basicamente com farinha de cereal (com proteínas formadores de glúten, geralmente de
+                        trigo), água, sal/açúcar.
+                        A evidência de ocorrência mais antiga de pão na Europa data de há 30 mil anos.
+                        A esta mistura básica podem acrescentar-se vários ingredientes, desde gordura a
+                        especiarias, passando por carne (geralmente curada), frutas secas ou frutas
+                        cristalizadas, etc. O pão comercial por outro lado, geralmente contém aditivos
+                        para melhorar o sabor, textura, cor, vida de prateleira, nutrição e facilidade
+                        de fabricação.
+                        Basicamente existem tipos de pão: levedado, com adição de levedura/fermento à massa,
+                        produzindo pães mais macios, e; ázimo, não fermentado, que produz pães geralmente
+                        achatados e consistentes.
+                        A Organização Mundial da Saúde (OMS) recomenda que seja ingerido 50 kg deste alimento por ano.
+                    </p>
+                </div>
+
+                <div class="teste">
+                    <img src="ASSETS/paes_ImgID1.png" alt="Pães">
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contatos">
+            <form id="formcontatos">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome" name="nome" id="nome">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email" name="email" id="email">
+                <label for="menssagem">Mensagem</label>
+                <textarea cols="10" rows="3"></textarea>
+                <input type="submit" value="ENVIAR" onclick="Enviar()">
+            </form>
+        </div>
+    </footer>
+<script src="./script.js"></script>
+</body>
+
+</html>
+

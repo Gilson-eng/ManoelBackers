@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: brown;
+    
+}
+
+.logo {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo img {
+    padding: 1rem;
+    width: 10rem;
+}
+
+#nave {
+    display: flex;
+    background-color: burlywood;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+
+}
+
+#nave ul {
+    display: inline-flex;
+
+}
+
+#nave ul li {
+    margin: 0 2rem;
+    transition: all 0.5s;
+    padding: 10px;
+}
+
+#nave ul li:hover {
+    cursor: pointer;
+    background-color: rgba(218, 167, 101, 0.5);
+}
+
+.contatos {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+#formcontatos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    color: gray;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 12rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+
+}
+
+#formcontatos textarea,
+input {
+    outline: none;
+}
+
+#formcontatos [type=submit] {
+    padding: 0.1rem 0;
+    margin-top: 0.5rem;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: .2rem;
+}
+
+#formcontatos [type=submit]:hover {
+    background-color: rgb(201, 90, 90);
+}
+
+.paes {   
+    width: 75%;
+    margin: auto;
+    background-color: beige;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    align-items: center;
+}
+
+.historia {
+    background-color: white;
+    border-radius: 1rem;
+    width: 75%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
