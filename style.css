@@ -8,8 +8,7 @@
 
 
 body {
-    background-color: brown;
-    
+    background-color: brown;    
 }
 
 .logo {
@@ -21,7 +20,7 @@ body {
 
 .logo img {
     padding: 1rem;
-    width: 10rem;
+    width: 13rem;
 }
 
 #nave {
@@ -36,6 +35,11 @@ body {
 #nave ul {
     display: inline-flex;
 
+}
+
+#nave ul a {
+    text-decoration: none;
+    color: white;
 }
 
 #nave ul li {
@@ -55,6 +59,7 @@ body {
     align-items: flex-start;
 }
 
+
 #formcontatos {
     display: flex;
     flex-direction: column;
@@ -63,7 +68,7 @@ body {
     color: gray;
     border-radius: 0.5rem;
     width: 20rem;
-    height: 12rem;
+    height: 25rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     position: fixed;
@@ -91,21 +96,43 @@ input {
     background-color: rgb(201, 90, 90);
 }
 
-.paes {   
+.paes {  
+    display: flex;
     width: 75%;
     margin: auto;
-    background-color: beige;
+    background-color: white;
     margin-top: 1rem;
     padding: 2rem;
     border-radius: 1rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
-main{
-    align-items: center;
+
+.paes img{
+    width: 25rem;
+    margin-left: 1rem;    
 }
 
+.textbolo {  
+    display: flex;
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.textbolo img{
+    width: 25rem; 
+    margin-left: 1rem;    
+}
+
+
 .historia {
+    display: flex;
     background-color: white;
     border-radius: 1rem;
     width: 75%;
@@ -113,4 +140,9 @@ main{
     margin-top: 1rem;
     padding: 2rem;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.historia img{
+    width: 25rem;
+    margin-left: 1rem;     
 }
