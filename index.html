@@ -21,7 +21,7 @@
                 <a href="#home">
                     <li>Home</li>
                 </a>
-                <a href="#contatos">
+                <a href="#contatos" onclick="contatos()">
                     <li>Contatos</li>
                 </a>
                 <a href="#produtos">
@@ -51,7 +51,7 @@
                 </p>
 
             </div>
-            <img src="ASSETS/fachada.jpg" alt="Fachada">
+            <img src="ASSETS/fachada.jpg" alt="Fachada" loading = "lazy">
         </div>
 
         <div class="paes" id="produtos">
@@ -73,7 +73,7 @@
                     A Organização Mundial da Saúde (OMS) recomenda que seja ingerido 50 kg deste alimento por ano.
                 </p>
             </div>
-            <img src="ASSETS/paes_ImgID1.png" alt="Pães">
+            <img src="ASSETS/paes_ImgID1.png" alt="Pães" loading = "lazy">
         </div>
 
         <div class="textbolo">
@@ -98,7 +98,7 @@
                     a sua cozedura.
                 </p>
             </div>
-            <img src="ASSETS/bolo.jpg" alt="Bolo">
+            <img src="ASSETS/bolo.jpg" alt="Bolo" loading = "lazy">
         </div>
 
 
@@ -106,29 +106,31 @@
 
     <footer>
         <div class="contatos">
-            <form id="formcontatos">
+            <form name = "formulario" id="formcontatos">
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Nome" name="nome" id="nome">
+                <input type="text" placeholder="Nome" name="nome" id="nome" required>
                 <label for="cpf">CPF</label>
-                <input type="text" placeholder="CPF" name="cpf" id="cpf">
+                <input type="text" placeholder="CPF" name="cpf" id="cpf" required>
                 <label for="telefone">Telefone</label>
-                <input type="text" placeholder="Telefone" name="telefone" id="telefone">
+                <input type="text" placeholder="Telefone" name="telefone" id="telefone" required>
                 <label for="email">Email</label>
-                <input type="text" placeholder="Email" name="email" id="email">
+                <input type="text" placeholder="Email" name="email" id="email" required>
                 Estado
-                <select name="select">
+                <select name="select" required>
                     <option value="selecione">Selecione</option>
                     <option value="ES">Espírito Santo</option>
                     <option value="MG">Minas Gerais</option>
                     <option value="SP">São Paulo</option>
                     <option value="outros">Outro</option>
                 </select>
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="genero" id="masculino">
-                <label for="femininno">Feminino</label>
-                <input type="radio" name="genero" id="feminino">
+                <spam>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="genero" id="masculino" value = "masculino" required>
+                    <label for="femininno">Feminino</label>
+                    <input type="radio" name="genero" id="feminino" value = "feminino" required>
+                </spam>
                 <label for="menssagem">Mensagem</label>
-                <textarea cols="10" rows="3"></textarea>
+                <textarea cols="12" rows="3" name = "mensagem" required></textarea>
                 <input type="submit" value="ENVIAR" onclick="Enviar()">
             </form>
         </div>

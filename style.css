@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -53,6 +54,7 @@ body {
     background-color: rgba(218, 167, 101, 0.5);
 }
 
+
 .contatos {
     display: flex;
     justify-content: right;
@@ -61,14 +63,14 @@ body {
 
 
 #formcontatos {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     color: gray;
     border-radius: 0.5rem;
     width: 20rem;
-    height: 25rem;
+    height: 22rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     position: fixed;
@@ -76,9 +78,18 @@ body {
 
 }
 
+#formcontatos spam{
+    margin: 1rem 0;
+
+}
+
 #formcontatos textarea,
 input {
     outline: none;
+}
+
+#formcontatos textarea {
+   resize: none;
 }
 
 #formcontatos [type=submit] {
