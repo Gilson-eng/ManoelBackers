@@ -1,6 +1,5 @@
 const getAll = (req, res)=> {
-
-    res.json({mensagem: "Hello World"});
+res.json({mensagem: "Olá!"});
     
 
 };
@@ -11,7 +10,8 @@ const getById = (req, res) =>{
 };
 
 const post = (req, res) =>{
-
+    res.json({mensagem: "Olá!"});
+    
 
 };
 
