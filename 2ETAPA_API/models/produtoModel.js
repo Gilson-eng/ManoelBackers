@@ -5,16 +5,16 @@ module.exports = {
     buscarTodos: async () => {
         try {
 
-            const perfis = await db
+            const produto = await db
                 .select()
 
-                .table("TB_Perfil");
+                .table("TB_Produtos");
 
-            if (!perfis) {
+            if (!produto) {
                 return null;
             }
 
-            return perfis;
+            return produto;
         } catch (err) {
             console.log(err);
             return null;
@@ -23,16 +23,16 @@ module.exports = {
 
     buscarPorId: async (id) => {
         try {
-            const perfis = await db
+            const produto = await db
                 .select()
 
-                .table("TB_Perfil").where("TB_Perfil.IDPerfil", id);
+                .table("TB_Produtos").where("TB_Produtos.IDProduto", id);
 
-            if (!perfis) {
+            if (!produto) {
                 return null;
             }
 
-            return perfis; 
+            return produto; 
             
 
         } catch (err) {
@@ -42,9 +42,9 @@ module.exports = {
 
     },
 
-    criarPerfil: async (perfil) => {
+    criarPerfil: async (produto) => {
         try {
-            const resultado = await db.insert(perfil).into("TB_Perfil");
+            const resultado = await db.insert(produto).into("TB_Produtos");
             return resultado;
 
         } catch (err) {
@@ -55,9 +55,9 @@ module.exports = {
 
     },
 
-    editarPerfil: async (id, perfil) => {
+    editarPerfil: async (id, produto) => {
         try {
-            const resultado = await db.update(perfil).table("TB_Perfil").where("TB_Perfil.IDPerfil", id);
+            const resultado = await db.update(produto).table("TB_Produtos").where("TB_Produtos.IDProduto", id);
 
             return resultado;
 
@@ -75,7 +75,7 @@ module.exports = {
             const resultado = await db
                 .select()
 
-                .table("TB_Perfil").where("TB_Perfil.IDPerfil", id).del();
+                .table("TB_Produtos").where("TB_Produtos.IDProduto", id).del();
 
 
             return resultado;

@@ -1,13 +1,18 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const perfilRoute = require("./routes/perfilRoute");
-
 app.use("/perfil", perfilRoute);
+
+const produtosRoute = require("./routes/produtosRoute");
+app.use("/produtos", produtosRoute);
+
+const categoriaRoute = require("./routes/categoriaRoute");
+app.use("/categoria", categoriaRoute);
 
 app.listen(PORT, () => console.log("Escutando a porta " + PORT));
