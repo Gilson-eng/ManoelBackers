@@ -15,4 +15,7 @@ app.use("/produtos", produtosRoute);
 const categoriaRoute = require("./routes/categoriaRoute");
 app.use("/categoria", categoriaRoute);
 
+const usuarioRoute = require("./routes/usuarioRoute");
+app.use("/usuario", usuarioRoute);
+
 app.listen(PORT, () => console.log("Escutando a porta " + PORT));
