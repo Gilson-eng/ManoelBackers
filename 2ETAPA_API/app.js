@@ -18,4 +18,7 @@ app.use("/categoria", categoriaRoute);
 const usuarioRoute = require("./routes/usuarioRoute");
 app.use("/usuario", usuarioRoute);
 
+const movimentoRoute = require("./routes/movimentoRoute");
+app.use("/movimento", movimentoRoute);
+
 app.listen(PORT, () => console.log("Escutando a porta " + PORT));
