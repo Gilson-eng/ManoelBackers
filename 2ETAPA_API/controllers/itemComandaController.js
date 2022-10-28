@@ -33,7 +33,7 @@ module.exports = {
             const id = req.params.id;
             const itemComanda = await itemComandaModel.buscarPorId(id);
 
-            if (itemComanda) {
+            if (!itemComanda) {
                 return res.status(404).json({
                     sucesso: false,
                     mensagem: "Erro ao buscar pelo ID!"
@@ -82,7 +82,7 @@ module.exports = {
         try {
             const id = req.params.id;
             const itemComanda = req.body;
-            const resultado = await itemComandaModel.editarItemComanda(itemComanda, id);
+            const resultado = await itemComandaModel.editarItemComanda(id, itemComanda);
 
             if (!resultado) {
                 return res.status(404).json({
@@ -93,7 +93,7 @@ module.exports = {
 
             return res.status(200).json({
                 sucesso: true,
-                mensagem: "Item de comanda criado com sucesso!"
+                mensagem: "Item de comanda alterado com sucesso!"
             });
 
         } catch (err) {

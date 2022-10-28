@@ -57,7 +57,8 @@ module.exports = {
 
     editarPerfil: async (id, perfil) => {
         try {
-            const resultado = await db.update(perfil).table("TB_Perfil").where("TB_Perfil.IDPerfil", id);
+            const resultado = await db.update(perfil)
+            .table("TB_Perfil").where("TB_Perfil.IDPerfil", id);
 
             return resultado;
 
