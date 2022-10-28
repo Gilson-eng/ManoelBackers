@@ -32,6 +32,7 @@ module.exports = {
     criarUnidadeMedida: async(unidadeMedida) =>{
         try{
             const resultado = await db.insert(unidadeMedida).into("TB_UnidadeMedida");
+            return resultado;
                 
     }catch(err){
         console.log(err);

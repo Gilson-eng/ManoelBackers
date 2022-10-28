@@ -117,7 +117,7 @@ module.exports = {
         }
     },
 
-    deletar: async (id) => {
+    deletar: async (req, res) => {
         try {
             const id = req.params.id;
             const resultado = await unidadeMedidaModel.deletar(id);

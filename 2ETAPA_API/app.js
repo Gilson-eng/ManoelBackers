@@ -24,4 +24,10 @@ app.use("/movimento", movimentoRoute);
 const unidadeMedidaRoute = require ("./routes/unidadeMedidaRoute");
 app.use("/unidadeMedida", unidadeMedidaRoute);
 
+const comandaRoute = require("./routes/comandaRoute");
+app.use("/comanda", comandaRoute);
+
+const itemComandaRoute = require("./routes/itemComandaRoute");
+app.use("/itemComanda", itemComandaRoute);
+
 app.listen(PORT, () => console.log("Escutando a porta " + PORT));
