@@ -5,9 +5,7 @@ export default function index() {
   return (
     <div>
       
-       <ListaUsuarios></ListaUsuarios>
-
-       
+              
     </div>
     
 
