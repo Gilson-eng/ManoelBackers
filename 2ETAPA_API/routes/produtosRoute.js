@@ -3,8 +3,8 @@ const produtoController = require("../controllers/produtoController");
 
 router.get("/", produtoController.buscarTodos);
 router.get("/:id",produtoController.buscarPorId);
-router.post("/",produtoController.inserirPerfil);
-router.put("/:id",produtoController.editarPerfil);
+router.post("/",produtoController.inserirProduto);
+router.put("/:id",produtoController.editarProduto);
 router.delete("/:id", produtoController.deletar);
 
 

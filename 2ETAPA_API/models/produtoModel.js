@@ -42,7 +42,7 @@ module.exports = {
 
     },
 
-    criarPerfil: async (produto) => {
+    criarProduto: async (produto) => {
         try {
             const resultado = await db.insert(produto).into("TB_Produtos");
             return resultado;
@@ -55,7 +55,7 @@ module.exports = {
 
     },
 
-    editarPerfil: async (id, produto) => {
+    editarProduto: async (id, produto) => {
         try {
             const resultado = await db.update(produto).table("TB_Produtos").where("TB_Produtos.IDProduto", id);
 

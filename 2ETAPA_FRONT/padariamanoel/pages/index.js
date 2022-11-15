@@ -1,11 +1,11 @@
 import React from 'react'
-import ListaUsuarios from '../componentes/ListaUsuarios'
+import ListaUnidadeMedida from '../componentes/ListaUnidadeMedida'
 
 export default function index() {
   return (
     <div>
       
-       <ListaUsuarios></ListaUsuarios>
+      <ListaUnidadeMedida></ListaUnidadeMedida>
 
        
     </div>
