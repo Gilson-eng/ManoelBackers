@@ -12,7 +12,7 @@ const ListaUnidadeMedida = () => {
   async function adicionaUnidadeMedida() {
     console.log("Inserindo");
     let unidadeMedida = {
-      IDUnidadeMedida: 3,
+      IDUnidadeMedida: 86,
       Descricao: "Pacoote",
     };
 
