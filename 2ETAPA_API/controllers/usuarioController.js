@@ -64,7 +64,7 @@ module.exports = {
 
     deletar: async(req, res)=>{
         try{
-            const id = res.params.id;
+            const id = req.params.id;
             const resultado = await usuarioModel.deletar(id);
 
             if(!resultado){

@@ -56,7 +56,7 @@ module.exports = {
 
     deletar: async (id) => {
         try {
-            const resultado = await db.select().table("TB_Usuario.IDUsuario", id).del();
+            const resultado = await db.select().table("TB_Usuario").where("TB_Usuario.IDUsuario", id).del();
             return resultado;
         } catch (err) {
             console.log(err);

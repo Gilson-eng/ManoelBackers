@@ -12,8 +12,8 @@ const ListaPerfil = () => {
   async function adicionaPerfil() {
     console.log("Adicionando");
     let perfil = {
-      IDPerfil: "171",
-      Descricao: "Homencida",
+      IDPerfil: "15",
+      Descricao: "Bananinha",
     };
 
     let resposta = await api.post("perfil", perfil);
