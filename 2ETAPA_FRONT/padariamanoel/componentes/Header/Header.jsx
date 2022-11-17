@@ -33,7 +33,7 @@ export default function Header() {
                   title="Produtos"
                   id={`offcanvasNavbarDropdown-expand-${false}`}
                 >
-                  <NavDropdown.Item href="#action3">
+                  <NavDropdown.Item href="/produtos">
                     Lista de Produtos
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action4">

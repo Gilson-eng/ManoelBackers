@@ -36,7 +36,6 @@ export default function Index() {
       colunas={colunas}
       linhas={linhas}
       handleDelete={async (id) => {
-        console.log(id);
         await api.delete("/usuario/" + id);
         await ListaUsuarios();
       }}
