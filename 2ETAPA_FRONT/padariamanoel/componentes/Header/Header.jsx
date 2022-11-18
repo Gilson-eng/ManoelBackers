@@ -28,7 +28,7 @@ export default function Header() {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#action2">Comandas</Nav.Link>
-                <Nav.Link href="#action3">Movimentos</Nav.Link>
+                <Nav.Link href="/movimento">Movimentos</Nav.Link>
                 <NavDropdown
                   title="Produtos"
                   id={`offcanvasNavbarDropdown-expand-${false}`}
@@ -36,10 +36,10 @@ export default function Header() {
                   <NavDropdown.Item href="/produtos">
                     Lista de Produtos
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item href="/categoria">
                     Categorias
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action5">
+                  <NavDropdown.Item href="/unidadeMedida">
                     Unidade de medida
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -50,7 +50,7 @@ export default function Header() {
                   <NavDropdown.Item href="/usuarios">
                     Lista de Usuários
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Perfis</NavDropdown.Item>
+                  <NavDropdown.Item href="/perfil">Perfis</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Offcanvas.Body>

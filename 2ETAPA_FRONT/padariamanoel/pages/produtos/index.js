@@ -15,7 +15,7 @@ export default function Index() {
   const colunas = {
     id: "ID",
     descricao: "Descrição",
-    iDCategoria: "ID CAtegoria",
+    iDCategoria: "ID Categoria",
     codigoDeBarras: "Código de Barras",
     quantidade: "Quantidade",
     quantidadeMinima: "Quantidade Minima",
@@ -41,6 +41,7 @@ export default function Index() {
       caminhoEditar={"/produtos/editar/:id"}
       colunas={colunas}
       linhas={linhas}
+      titulo = "Produtos"
       handleDelete={async (id) => {
         await api.delete("/produtos/" + id);
         await ListaProdutos();

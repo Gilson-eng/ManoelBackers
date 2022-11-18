@@ -35,6 +35,7 @@ export default function Index() {
       caminhoEditar={"/usuario/editar/:id"}
       colunas={colunas}
       linhas={linhas}
+      titulo = "Usuários"
       handleDelete={async (id) => {
         await api.delete("/usuario/" + id);
         await ListaUsuarios();

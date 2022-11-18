@@ -2,10 +2,10 @@ import {Table} from 'react-bootstrap';
 import {FaEdit, FaTrash} from 'react-icons/fa';
 
 
-const Tabela = ({ colunas, linhas, handleDelete, caminhoEditar }) => {
+const Tabela = ({ colunas, linhas, handleDelete, caminhoEditar, }) => {
     return (
         <>
-            <Table striped bordered hover>
+         <Table striped bordered hover>
                 <thead>
                     <tr>
                         {Object.values(colunas).map((col) => {
