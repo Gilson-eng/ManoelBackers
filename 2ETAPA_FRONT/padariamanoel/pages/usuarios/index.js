@@ -31,8 +31,8 @@ export default function Index() {
   });
   return (
     <Listagem
-      caminhoCriar={"/usuario/criar"}
-      caminhoEditar={"/usuario/editar/:id"}
+      caminhoCriar={"/usuarios/criar"}
+      caminhoEditar={"/usuarios/editar/:id"}
       colunas={colunas}
       linhas={linhas}
       titulo = "Usuários"
